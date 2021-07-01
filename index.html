@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Import material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Will's - Player</title>
+</head>
+<body>
+    <div id="background-player">
+        
+        <label class="user-image" for="image">Insert Your Image</label>
+        <input type="file" id="image" accept="image/*">
+
+        <div>
+            <h3>Music Title</h3>
+            <p>Music Band Name</p>
+        </div>
+
+        <div class="controls">
+            <i class="material-icons" id="previous">skip_previous</i>
+            <i class="material-icons" id="pause">play_arrow</i>
+            <i class="material-icons" id="next">skip_next</i>
+        </div>
+
+        <label class="arc" for="music-archive">Chose Archives</label>
+        <input type="file" id="music-archive" accept="audio/*" multiple>
+
+        <audio>Seu navegador não suporta o audio</audio>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

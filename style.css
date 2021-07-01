@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(50deg, #61ADF3, #CBE7FC);
+    color: white;
+    font-family: 'Karla', sans-serif;
+}
+/* Estilizando o upload de arquivos */
+input[type="file"] {
+    display: none;
+}
+.arc {
+    padding: 6% 2%;
+    width: 200px;
+    background-color: #333;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    justify-self: center;
+    transition: .5s;
+}
+.arc:hover {
+    background-color: white;
+    color: black;
+}
+.user-image {
+    display: flex;
+    background-color: #333;
+    border-radius: 100%;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    cursor: pointer;
+}
+.user-image:hover {
+    background-color: white;
+    color: black;
+}
+/* Estiliando o Player */
+#background-player {
+    background: linear-gradient(#9fd1fb00 30%, #456681);
+    height: 70vh;
+    width: 40vw;
+    border-radius: 10%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#background-player audio {
+    justify-self: center;
+}
+#background-player img {
+    background-color: #333;
+    height: 28vh;
+    width: 15vw;
+    border-radius: 100%;
+    justify-self: center;
+}
+#background-player h3 {
+    font-size: 1.6vw;
+}
+#background-player p {
+    font-size: 1vw;
+}
+#background-player .controls {
+    width: 100%;
+    visibility: hidden;
+}
+#background-player .controls .material-icons {
+    font-size: 50px;
+    cursor: pointer;
+}
